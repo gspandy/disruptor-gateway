@@ -16,6 +16,6 @@ public class MessageEventHandler implements EventHandler<MessageEvent> {
 
     @Override
     public void onEvent(MessageEvent messageEvent, long sequence, boolean endOfBatch) throws Exception {
-        LOGGER.info("on event: " + messageEvent);
+        LOGGER.info("Receive message: " + messageEvent.getMessage());
     }
 }
